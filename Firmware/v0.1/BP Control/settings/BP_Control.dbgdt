@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <PreferedWindows><Position>4</Position><ScreenPosX>820</ScreenPosX><ScreenPosY>205</ScreenPosY><Windows/></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1381</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1035</ColumnWidth1>
+        <ColumnWidth2>276</ColumnWidth2>
+        <ColumnWidth3>69</ColumnWidth3>
+      <PreferedWindows><Position>4</Position><ScreenPosX>650</ScreenPosX><ScreenPosY>52</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window></Windows></PreferedWindows></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>529</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory/>
+        
+        
+      <PreferedWindows><Position>0</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+    <Memory><FindDirection>1</FindDirection><FindAsHex>0</FindAsHex></Memory><StaticWatch><expressions><item>COMMAND_CNTRL</item><item>SM5822_CNTRL</item><item>BOOTLOADER_CNTRL</item><item>IAP_CNTRL</item><item>I2C0_CNTRL</item><item>CAM_CNTRL</item><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>248</item><item>150</item><item>100</item><item>157</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>WATCH_1</Factory></Window></Windows></PreferedWindows></StaticWatch><WATCH_1><expressions><item>SM5822_CNTRL</item><item/></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>100</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window></Windows></PreferedWindows></WATCH_1><Register><PreferedWindows><Position>0</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Register></Static>
+    <Windows>
+      
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-21310-28354</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>BP_Control</ExpandedNode><ExpandedNode>BP_Control/Output</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1><Tabs><Tab><Identity>TabID-5782-19964</Identity><TabName>Memory</TabName><Factory>Memory</Factory><Session><ZoneNumber>0</ZoneNumber><SelectionAnchor>16384</SelectionAnchor><SelectionEnd>16384</SelectionEnd><UnitsPerGroup>1</UnitsPerGroup><EndianMode>0</EndianMode><DataCovEnabled>0</DataCovEnabled><DataCovShown>0</DataCovShown><AutoRefresh>1</AutoRefresh><HScroll>0</HScroll><VScroll>1014</VScroll></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd1><Wnd2><Tabs><Tab><Identity>TabID-32021-26293</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd2><Wnd4><Tabs><Tab><Identity>TabID-4435-24763</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd4><Wnd6><Tabs><Tab><Identity>TabID-28705-22641</Identity><TabName>Disassembly</TabName><Factory>Disassembly</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd6></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>2</YPos2><SelStart2>422</SelStart2><SelEnd2>422</SelEnd2></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\fsm.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>1456</SelStart2><SelEnd2>1456</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\user_code.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>274</YPos2><SelStart2>14618</SelStart2><SelEnd2>14618</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>t:\PROJEKTE\AFC\Automatisierung\Matratze\Base Plate\BasePlate V0.x Control\BasePlate Control BL V0.5 FW V0.1\BP Control\lib\default.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>t:\PROJEKTE\AFC\Automatisierung\Matratze\Base Plate\BasePlate V0.x Control\BasePlate Control BL V0.5 FW V0.1\BP Control\lib\i2c_master.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\cam.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>126</YPos2><SelStart2>612</SelStart2><SelEnd2>612</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\bildverarbeitung.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\i2c_slave.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>3567</SelStart2><SelEnd2>3567</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-0134b508><key>iaridepm.enu1</key></Toolbar-0134b508></Sizes></Row0><Row1><Sizes><Toolbar-0a916ca8><key>debuggergui.enu1</key></Toolbar-0a916ca8></Sizes></Row1><Row2><Sizes><Wnd6><Rect><Top>46</Top><Left>-2</Left><Bottom>284</Bottom><Right>1682</Right><x>-2</x><y>46</y><xscreen>1684</xscreen><yscreen>238</yscreen><sizeHorzCX>1002381</sizeHorzCX><sizeHorzCY>245361</sizeHorzCY><sizeVertCX>139286</sizeVertCX><sizeVertCY>245361</sizeVertCY></Rect></Wnd6></Sizes></Row2><Row3><Sizes><Toolbar-0a5aae60><key>armjlink.enu1</key></Toolbar-0a5aae60></Sizes></Row3></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>277</Bottom><Right>620</Right><x>-2</x><y>-2</y><xscreen>226</xscreen><yscreen>184</yscreen><sizeHorzCX>134524</sizeHorzCX><sizeHorzCY>189691</sizeHorzCY><sizeVertCX>370238</sizeVertCX><sizeVertCY>287629</sizeVertCY></Rect></Wnd2><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>878</Bottom><Right>321</Right><x>-2</x><y>275</y><xscreen>191</xscreen><yscreen>243</yscreen><sizeHorzCX>113690</sizeHorzCX><sizeHorzCY>250515</sizeHorzCY><sizeVertCX>370238</sizeVertCX><sizeVertCY>54639</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>314</Bottom><Right>741</Right><x>-2</x><y>-2</y><xscreen>743</xscreen><yscreen>316</yscreen><sizeHorzCX>442262</sizeHorzCX><sizeHorzCY>325773</sizeHorzCY><sizeVertCX>134524</sizeVertCX><sizeVertCY>206186</sizeVertCY></Rect></Wnd1><Wnd4><Rect><Top>0</Top><Left>0</Left><Bottom>1376259</Bottom><Right>5002</Right><x>739</x><y>-2</y><xscreen>943</xscreen><yscreen>316</yscreen><sizeHorzCX>561310</sizeHorzCX><sizeHorzCY>325773</sizeHorzCY><sizeVertCX>104762</sizeVertCX><sizeVertCY>200000</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

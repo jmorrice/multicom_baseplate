@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>BP_Control/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>267</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+    <Build><PreferedWindows><Position>4</Position><ScreenPosX>455</ScreenPosX><ScreenPosY>55</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window></Windows></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1321</ColumnWidth1><ColumnWidth2>459</ColumnWidth2><ColumnWidth3>69</ColumnWidth3></Build><TerminalIO/><Debug-Log><PreferedWindows><Position>4</Position><ScreenPosX>740</ScreenPosX><ScreenPosY>309</ScreenPosY><Windows/></PreferedWindows><ColumnWidth0>21</ColumnWidth0><ColumnWidth1>1328</ColumnWidth1></Debug-Log><PROJECT_GUI_CALL_GRAPH><col-names><item>File</item><item>Function</item><item>Line</item></col-names><col-widths><item>200</item><item>700</item><item>100</item></col-widths><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></PROJECT_GUI_CALL_GRAPH><StaticWatch><PreferedWindows><Position>4</Position><ScreenPosX>414</ScreenPosX><ScreenPosY>203</ScreenPosY><Windows><Window><Factory>Memory</Factory></Window></Windows></PreferedWindows></StaticWatch><QuickWatch><PreferedWindows><Position>4</Position><ScreenPosX>778</ScreenPosX><ScreenPosY>244</ScreenPosY><Windows><Window><Factory>Disassembly</Factory></Window><Window><Factory>StaticWatch</Factory></Window><Window><Factory>WATCH_1</Factory></Window></Windows></PreferedWindows></QuickWatch><WATCH_1><PreferedWindows><Position>4</Position><ScreenPosX>778</ScreenPosX><ScreenPosY>244</ScreenPosY><Windows><Window><Factory>Disassembly</Factory></Window><Window><Factory>StaticWatch</Factory></Window><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows></WATCH_1><Disassembly><PreferedWindows><Position>4</Position><ScreenPosX>778</ScreenPosX><ScreenPosY>244</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window><Window><Factory>WATCH_1</Factory></Window><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows></Disassembly><DRIVER_CUSTOM_SFR><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><col-names><item>Access</item><item>Address</item><item>Name</item><item>Size</item><item>Zone</item><item>_I0</item></col-names><col-widths><item>120</item><item>150</item><item>150</item><item>50</item><item>120</item><item>20</item></col-widths></DRIVER_CUSTOM_SFR><Memory><PreferedWindows><Position>4</Position><ScreenPosX>414</ScreenPosX><ScreenPosY>203</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window></Windows></PreferedWindows></Memory></Static>
+    <Windows>
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-8679-26340</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>BP_Control</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-24091-27688</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-14263-5375</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\incl.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\bootloader.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>220</YPos2><SelStart2>6070</SelStart2><SelEnd2>6070</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\bootloader.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>33</YPos2><SelStart2>134</SelStart2><SelEnd2>134</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>11</YPos2><SelStart2>422</SelStart2><SelEnd2>422</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\Debug\List\c.map</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>107</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\i2c_slave.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>44</YPos2><SelStart2>1673</SelStart2><SelEnd2>1673</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\fsm.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>54</YPos2><SelStart2>2037</SelStart2><SelEnd2>2037</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\fsm.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>46</SelStart2><SelEnd2>46</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\user_code.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>73</YPos2><SelStart2>1160</SelStart2><SelEnd2>1160</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\config\LPC1768_Flash.icf</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>3</YPos2><SelStart2>1380</SelStart2><SelEnd2>1385</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\BP Control\lib\i2c_slave.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>84</YPos2><SelStart2>2795</SelStart2><SelEnd2>2795</SelEnd2></Tab><ActiveTab>10</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-026e2d58><key>iaridepm.enu1</key></Toolbar-026e2d58></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>579</Bottom><Right>358</Right><x>-2</x><y>-2</y><xscreen>357</xscreen><yscreen>234</yscreen><sizeHorzCX>247917</sizeHorzCX><sizeHorzCY>286064</sizeHorzCY><sizeVertCX>250000</sizeVertCX><sizeVertCY>710269</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>194</Bottom><Right>1442</Right><x>-2</x><y>-2</y><xscreen>1444</xscreen><yscreen>196</yscreen><sizeHorzCX>1002778</sizeHorzCX><sizeHorzCY>239609</sizeHorzCY><sizeVertCX>247917</sizeVertCX><sizeVertCY>286064</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

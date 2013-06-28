@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3463243427</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bildverarbeitung.pbi</file>
+      <file>$PROJ_DIR$\lib\bildverarbeitung.c</file>
+      <file>$PROJ_DIR$\lib\bootloader.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\sm5822.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\BP_Control.out</file>
+      <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\cam.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\default.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nvic.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fsm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\pwm.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BP_Control.pbd</file>
+      <file>$PROJ_DIR$\Debug\List\BP_Control.map</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\config\LPC1768_Flash.icf</file>
+      <file>$PROJ_DIR$\lib\iolpc1766.h</file>
+      <file>$PROJ_DIR$\lib\main.c</file>
+      <file>$PROJ_DIR$\lib\nvic.c</file>
+      <file>$PROJ_DIR$\lib\nvic.h</file>
+      <file>$PROJ_DIR$\lib\pwm.c</file>
+      <file>$PROJ_DIR$\lib\pwm.h</file>
+      <file>$PROJ_DIR$\lib\sm5822.c</file>
+      <file>$PROJ_DIR$\lib\sm5822.h</file>
+      <file>$PROJ_DIR$\lib\user_code.c</file>
+      <file>$PROJ_DIR$\lib\user_code.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nvic.o</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_slave.o</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\bootloader.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\user_code.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sm5822.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_master.pbi</file>
+      <file>$PROJ_DIR$\lib\bootloader.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\cstartup_M.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_master.o</file>
+      <file>$PROJ_DIR$\lib\bildverarbeitung.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\pwm.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\fsm.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\lib\cam.c</file>
+      <file>$PROJ_DIR$\lib\cam.h</file>
+      <file>$PROJ_DIR$\src\cstartup_M.s</file>
+      <file>$PROJ_DIR$\lib\default.c</file>
+      <file>$PROJ_DIR$\lib\default.h</file>
+      <file>$PROJ_DIR$\lib\flash.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\default.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\BP_Control.hex</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\lib\arm_comm.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\user_code.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\cam.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bootloader.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bildverarbeitung.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\flash.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\flash.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_slave.pbi</file>
+      <file>$PROJ_DIR$\lib\flash.h</file>
+      <file>$PROJ_DIR$\lib\fsm.c</file>
+      <file>$PROJ_DIR$\lib\fsm.h</file>
+      <file>$PROJ_DIR$\lib\i2c.h</file>
+      <file>$PROJ_DIR$\lib\i2c_master.c</file>
+      <file>$PROJ_DIR$\lib\i2c_master.h</file>
+      <file>$PROJ_DIR$\lib\i2c_slave.c</file>
+      <file>$PROJ_DIR$\lib\i2c_slave.h</file>
+      <file>$PROJ_DIR$\lib\incl.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\lib\bildverarbeitung.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\BP_Control.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 20 66 65 7 41 57 68 47 42 33 46 31 45 38 37 34 32 63 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\c.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 20 66 65 7 41 57 68 47 42 33 46 31 45 38 37 34 32 63 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\nvic.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\pwm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\sm5822.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\user_code.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71 18 58 10</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71 18 58 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 5 17</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\cam.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71 18 58 10</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71 18 58 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\default.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\flash.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\fsm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\i2c_master.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lib\i2c_slave.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 21 69 54 73 24 19 0 11 48 44 36 49 15 56 61 26 30 40 78 76 74 28 51 43 71</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,791 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.40.2.53884/W32 for ARM              07/Mar/2013  15:56:45 #
+# Copyright 2007-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  t:\PROJEKTE\AFC\Automatisierung\Matratze\Base            #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Exe\c.out.tmp                   #
+#    Map file     =  t:\PROJEKTE\AFC\Automatisierung\Matratze\Base            #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\List\c.map                      #
+#    Command line =  "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\bildverarbeitung.o"         #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\bootloader.o"               #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\cam.o"                      #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\cstartup_M.o"               #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\default.o"                  #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\flash.o"                    #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\fsm.o"                      #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\i2c_master.o"               #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\i2c_slave.o"                #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\main.o"                     #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\nvic.o"                     #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\pwm.o"                      #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\sm5822.o"                   #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Obj\user_code.o" -o             #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\Exe\c.out.tmp" --redirect       #
+#                    _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map   #
+#                    "t:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\Debug\List\c.map" --config            #
+#                    "T:\PROJEKTE\AFC\Automatisierung\Matratze\Base           #
+#                    Plate\BasePlate V0.x Control\BasePlate Control BL V0.5   #
+#                    FW V0.1\BP Control\config\LPC1768_Flash.icf"             #
+#                    --semihosting --entry __iar_program_start --vfe          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000100 to 0x00002fff] { ro };
+"P2":  place in [from 0x00004000 to 0x0007ffff] {
+          ro object i2c_master.o, ro object cam.o, ro object bildverarbeitung.o,
+          ro object sm5822.o, ro object user_code.o };
+"P3":  place in [from 0x00003000 to 0x00003fff] { ro object fsm.o };
+"P4":  place in [from 0x10000000 to 0x10007fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xc4
+  .intvec            ro code  0x00000000    0xc4  cstartup_M.o [2]
+                            - 0x000000c4    0xc4
+
+"P1":                                     0x2280
+  .text              ro code  0x00000100   0x4c8  default.o [2]
+  .text              ro code  0x000005c8    0xe0  nvic.o [2]
+  .text              ro code  0x000006a8    0x4c  xassert.o [3]
+  .text              ro code  0x000006f4    0xa0  xreportassert.o [3]
+  .text              ro code  0x00000794     0x6  abort.o [3]
+  .text              ro code  0x0000079a    0x28  putchar.o [3]
+  .text              ro code  0x000007c2    0x2e  copy_init3.o [5]
+  .text              ro code  0x000007f0    0x14  exit.o [6]
+  .text              ro code  0x00000804    0x10  write.o [6]
+  .text              ro code  0x00000814    0x6c  iarttio.o [6]
+  .text              ro code  0x00000880    0x1e  dwrite.o [6]
+  .text              ro code  0x0000089e    0x22  zero_init3.o [5]
+  .text              ro code  0x000008c0     0x8  XShttio.o [3]
+  .text              ro code  0x000008c8    0x20  iarwstd.o [6]
+  .text              ro code  0x000008e8    0x22  iarwrite.o [6]
+  .text              ro code  0x0000090a     0x2  cstartup_M.o [2]
+  .text              ro code  0x0000090c   0x470  bootloader.o [2]
+  .text              ro code  0x00000d7c   0x444  i2c_slave.o [2]
+  .text              ro code  0x000011c0   0x148  flash.o [2]
+  .text              ro code  0x00001308   0x2d4  xlog.o [4]
+  .text              ro code  0x000015dc    0x42  xdnorm.o [4]
+  .text              ro code  0x00001620     0xc  errno.o [3]
+  .text              ro code  0x0000162c    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x0000165c   0x1a2  DblMul.o [4]
+  .text              ro code  0x00001800    0xe8  DblAdd.o [4]
+  .text              ro code  0x000018e8   0x246  DblDiv.o [4]
+  .text              ro code  0x00001b30   0x180  DblSub.o [4]
+  .text              ro code  0x00001cb0    0x2c  I32ToDbl.o [4]
+  .text              ro code  0x00001cdc     0x2  xtls.o [3]
+  .text              ro code  0x00001ce0   0x234  pwm.o [2]
+  .text              ro code  0x00001f14    0xd8  FltMul.o [4]
+  .text              ro code  0x00001fec    0xa4  main.o [2]
+  .text              ro code  0x00002090    0x90  DblToFlt.o [4]
+  .rodata            const    0x00002120    0x84  nvic.o [2]
+  .text              ro code  0x000021a4    0x5e  floor.o [4]
+  .text              ro code  0x00002204    0x4c  DblToI32.o [4]
+  .text              ro code  0x00002250    0x44  FltToS32.o [4]
+  .rodata            const    0x00002294    0x34  nvic.o [2]
+  .text              ro code  0x000022c8    0x28  data_init3.o [5]
+  .iar.init_table    const    0x000022f0    0x4c  - Linker created -
+  .text              ro code  0x0000233c    0x16  cmain.o [5]
+  .text              ro code  0x00002352     0x4  low_level_init.o [3]
+  .text              ro code  0x00002356     0x4  exit.o [3]
+  .text              ro code  0x0000235c     0xa  cexit.o [5]
+  .text              ro code  0x00002366     0xc  cstartup_M.o [5]
+  .text              ro code  0x00002372     0x6  log.o [4]
+  .rodata            const    0x00002378     0x0  zero_init3.o [5]
+  .rodata            const    0x00002378     0x0  copy_init3.o [5]
+  Initializer bytes  ro data  0x00002378     0x8  <for P4 s0>
+                            - 0x00002380  0x2280
+
+"P3":                                       0xec
+  .text              ro code  0x00003000    0xe8  fsm.o [2]
+  Initializer bytes  ro data  0x000030e8     0x4  <for P4 s2>
+                            - 0x000030ec    0xec
+
+"P2":                                     0x2140
+  .text              ro code  0x00004000   0xd48  cam.o [2]
+  .text              ro code  0x00004d48   0x800  i2c_master.o [2]
+  .text              ro code  0x00005548   0x790  user_code.o [2]
+  .text              ro code  0x00005cd8   0x27c  sm5822.o [2]
+  .text              ro code  0x00005f54   0x1e4  bildverarbeitung.o [2]
+  Initializer bytes  ro data  0x00006138     0x8  <for P4 s1>
+                            - 0x00006140  0x2140
+
+"P4", part 1 of 5:                           0x8
+  P4 s1                       0x10000000     0x8  <Init block>
+    .data            inited   0x10000000     0x4  i2c_master.o [2]
+    .data            inited   0x10000004     0x1  cam.o [2]
+                            - 0x10000008     0x8
+
+"P4", part 2 of 5:                           0x4
+  P4 s2                       0x10000008     0x4  <Init block>
+    .data            inited   0x10000008     0x1  fsm.o [2]
+    .data            inited   0x10000009     0x1  fsm.o [2]
+    .data            inited   0x1000000a     0x1  fsm.o [2]
+                            - 0x1000000c     0x4
+
+"P4", part 3 of 5:                           0x8
+  P4 s0                       0x1000000c     0x8  <Init block>
+    .data            inited   0x1000000c     0x8  XShttio.o [3]
+                            - 0x10000014     0x8
+
+"P4", part 4 of 5:                        0x5c3c
+  .bss               zero     0x10000014  0x4e38  cam.o [2]
+  .bss               zero     0x10004e4c   0x6e0  bildverarbeitung.o [2]
+  .bss               zero     0x1000552c   0x434  bootloader.o [2]
+  .bss               zero     0x10005960   0x134  i2c_master.o [2]
+  .bss               zero     0x10005a94   0x134  i2c_slave.o [2]
+  .bss               zero     0x10005bc8    0x2c  flash.o [2]
+  .bss               zero     0x10005bf4    0x20  sm5822.o [2]
+  .bss               zero     0x10005c14     0xc  bildverarbeitung.o [2]
+  .bss               zero     0x10005c20     0xc  i2c_slave.o [2]
+  .bss               zero     0x10005c2c     0x4  bootloader.o [2]
+  .bss               zero     0x10005c30     0x4  bootloader.o [2]
+  .bss               zero     0x10005c34     0x4  default.o [2]
+  .bss               zero     0x10005c38     0x4  flash.o [2]
+  .bss               zero     0x10005c3c     0x4  fsm.o [2]
+  .bss               zero     0x10005c40     0x4  fsm.o [2]
+  __DLIB_PERTHREAD   zero     0x10005c44     0x4  errno.o [3]
+  .bss               zero     0x10005c48     0x1  cam.o [2]
+  .bss               zero     0x10005c49     0x1  default.o [2]
+  .bss               zero     0x10005c4a     0x1  default.o [2]
+  .bss               zero     0x10005c4b     0x1  default.o [2]
+  .bss               zero     0x10005c4c     0x1  default.o [2]
+  .bss               zero     0x10005c4d     0x1  fsm.o [2]
+                            - 0x10005c4e  0x5c3a
+
+"P4", part 5 of 5:                         0x800
+  CSTACK                      0x10005c50   0x800  <Block>
+    CSTACK           uninit   0x10005c50   0x800  <Block tail>
+                            - 0x10006450   0x800
+
+Absolute sections, part 1 of 35:             0x4
+  .noinit            uninit   0x2009c000     0x4  i2c_slave.o [2]
+                            - 0x2009c004     0x4
+
+Absolute sections, part 2 of 35:             0x4
+  .noinit            uninit   0x2009c014     0x4  i2c_slave.o [2]
+                            - 0x2009c018     0x4
+
+Absolute sections, part 3 of 35:             0x4
+  .noinit            uninit   0x2009c020     0x4  cam.o [2]
+                            - 0x2009c024     0x4
+
+Absolute sections, part 4 of 35:             0x4
+  .noinit            uninit   0x2009c034     0x4  cam.o [2]
+                            - 0x2009c038     0x4
+
+Absolute sections, part 5 of 35:             0x4
+  .noinit            uninit   0x2009c040     0x4  pwm.o [2]
+                            - 0x2009c044     0x4
+
+Absolute sections, part 6 of 35:             0x4
+  .noinit            uninit   0x2009c054     0x4  default.o [2]
+                            - 0x2009c058     0x4
+
+Absolute sections, part 7 of 35:             0x8
+  .noinit            uninit   0x40004000     0x4  default.o [2]
+  .noinit            uninit   0x40004004     0x4  user_code.o [2]
+                            - 0x40004008     0x8
+
+Absolute sections, part 8 of 35:             0x4
+  .noinit            uninit   0x4000400c     0x4  default.o [2]
+                            - 0x40004010     0x4
+
+Absolute sections, part 9 of 35:             0x8
+  .noinit            uninit   0x40004014     0x4  default.o [2]
+  .noinit            uninit   0x40004018     0x4  default.o [2]
+                            - 0x4000401c     0x8
+
+Absolute sections, part 10 of 35:            0x4
+  .noinit            uninit   0x40004070     0x4  default.o [2]
+                            - 0x40004074     0x4
+
+Absolute sections, part 11 of 35:            0x8
+  .noinit            uninit   0x40008000     0x4  default.o [2]
+  .noinit            uninit   0x40008004     0x4  default.o [2]
+                            - 0x40008008     0x8
+
+Absolute sections, part 12 of 35:            0x4
+  .noinit            uninit   0x4000800c     0x4  default.o [2]
+                            - 0x40008010     0x4
+
+Absolute sections, part 13 of 35:            0x8
+  .noinit            uninit   0x40008014     0x4  default.o [2]
+  .noinit            uninit   0x40008018     0x4  default.o [2]
+                            - 0x4000801c     0x8
+
+Absolute sections, part 14 of 35:            0x4
+  .noinit            uninit   0x40008070     0x4  default.o [2]
+                            - 0x40008074     0x4
+
+Absolute sections, part 15 of 35:            0x4
+  .noinit            uninit   0x40018004     0x4  pwm.o [2]
+                            - 0x40018008     0x4
+
+Absolute sections, part 16 of 35:            0x8
+  .noinit            uninit   0x40018014     0x4  pwm.o [2]
+  .noinit            uninit   0x40018018     0x4  pwm.o [2]
+                            - 0x4001801c     0x8
+
+Absolute sections, part 17 of 35:           0x14
+  .noinit            uninit   0x40018040     0x4  pwm.o [2]
+  .noinit            uninit   0x40018044     0x4  pwm.o [2]
+  .noinit            uninit   0x40018048     0x4  pwm.o [2]
+  .noinit            uninit   0x4001804c     0x4  pwm.o [2]
+  .noinit            uninit   0x40018050     0x4  pwm.o [2]
+                            - 0x40018054    0x14
+
+Absolute sections, part 18 of 35:           0x1c
+  .noinit            uninit   0x4001c000     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4001c004     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4001c008     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4001c00c     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4001c010     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4001c014     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4001c018     0x4  i2c_slave.o [2]
+                            - 0x4001c01c    0x1c
+
+Absolute sections, part 19 of 35:            0x4
+  .noinit            uninit   0x4001c020     0x4  i2c_slave.o [2]
+                            - 0x4001c024     0x4
+
+Absolute sections, part 20 of 35:           0x14
+  .noinit            uninit   0x4002c000     0x4  i2c_master.o [2]
+  .noinit            uninit   0x4002c004     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4002c008     0x4  cam.o [2]
+  .noinit            uninit   0x4002c00c     0x4  cam.o [2]
+  .noinit            uninit   0x4002c010     0x4  pwm.o [2]
+                            - 0x4002c014    0x14
+
+Absolute sections, part 21 of 35:           0x14
+  .noinit            uninit   0x4002c040     0x4  i2c_master.o [2]
+  .noinit            uninit   0x4002c044     0x4  i2c_slave.o [2]
+  .noinit            uninit   0x4002c048     0x4  cam.o [2]
+  .noinit            uninit   0x4002c04c     0x4  cam.o [2]
+  .noinit            uninit   0x4002c050     0x4  pwm.o [2]
+                            - 0x4002c054    0x14
+
+Absolute sections, part 22 of 35:            0x4
+  .noinit            uninit   0x4002c068     0x4  i2c_master.o [2]
+                            - 0x4002c06c     0x4
+
+Absolute sections, part 23 of 35:            0xc
+  .noinit            uninit   0x400a0000     0x4  i2c_master.o [2]
+  .noinit            uninit   0x400a0004     0x4  i2c_master.o [2]
+  .noinit            uninit   0x400a0008     0x4  i2c_master.o [2]
+                            - 0x400a000c     0xc
+
+Absolute sections, part 24 of 35:            0xc
+  .noinit            uninit   0x400a0010     0x4  i2c_master.o [2]
+  .noinit            uninit   0x400a0014     0x4  i2c_master.o [2]
+  .noinit            uninit   0x400a0018     0x4  i2c_master.o [2]
+                            - 0x400a001c     0xc
+
+Absolute sections, part 25 of 35:           0x10
+  .noinit            uninit   0x400fc080     0x4  default.o [2]
+  .noinit            uninit   0x400fc084     0x4  default.o [2]
+  .noinit            uninit   0x400fc088     0x4  default.o [2]
+  .noinit            uninit   0x400fc08c     0x4  default.o [2]
+                            - 0x400fc090    0x10
+
+Absolute sections, part 26 of 35:            0x4
+  .noinit            uninit   0x400fc0c4     0x4  default.o [2]
+                            - 0x400fc0c8     0x4
+
+Absolute sections, part 27 of 35:            0x4
+  .noinit            uninit   0x400fc104     0x4  default.o [2]
+                            - 0x400fc108     0x4
+
+Absolute sections, part 28 of 35:            0x4
+  .noinit            uninit   0x400fc10c     0x4  default.o [2]
+                            - 0x400fc110     0x4
+
+Absolute sections, part 29 of 35:            0x4
+  .noinit            uninit   0x400fc1a0     0x4  default.o [2]
+                            - 0x400fc1a4     0x4
+
+Absolute sections, part 30 of 35:            0x8
+  .noinit            uninit   0x400fc1a8     0x4  pwm.o [2]
+  .noinit            uninit   0x400fc1ac     0x4  i2c_master.o [2]
+                            - 0x400fc1b0     0x8
+
+Absolute sections, part 31 of 35:            0x4
+  .noinit            uninit   0x400fc1c8     0x4  cam.o [2]
+                            - 0x400fc1cc     0x4
+
+Absolute sections, part 32 of 35:            0x4
+  .noinit            uninit   0xe000e100     0x4  nvic.o [2]
+                            - 0xe000e104     0x4
+
+Absolute sections, part 33 of 35:            0x4
+  .noinit            uninit   0xe000e180     0x4  nvic.o [2]
+                            - 0xe000e184     0x4
+
+Absolute sections, part 34 of 35:            0x4
+  .noinit            uninit   0xe000e280     0x4  nvic.o [2]
+                            - 0xe000e284     0x4
+
+Absolute sections, part 35 of 35:            0x4
+  .noinit            uninit   0xe000e400     0x4  nvic.o [2]
+                            - 0xe000e404     0x4
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x5c3a:
+          0x10000014  0x5c3a
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8:
+          0x00002378     0x8
+    1 destination range, total size 0x8:
+          0x1000000c     0x8
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8 (160% of destination):
+          0x00006138     0x8
+    1 destination range, total size 0x5:
+          0x10000000     0x5
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x4 (133% of destination):
+          0x000030e8     0x4
+    1 destination range, total size 0x3:
+          0x10000008     0x3
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data  rw data
+                                                    (abs)
+    ------              -------  -------  -------  -------
+command line: [1]
+    ------------------------------------------------------
+    Total:
+
+t:\PROJEKTE\AFC\Automatisierung\Matratze\Base Plate\BasePlate V0.x Control\BasePlate Control BL V0.5 FW V0.1\BP Control\Debug\Obj: [2]
+    bildverarbeitung.o      484             1 772
+    bootloader.o          1 136             1 084
+    cam.o                 3 400        1   20 026       28
+    cstartup_M.o            198
+    default.o             1 224                 8       80
+    flash.o                 328                48
+    fsm.o                   232        3       12
+    i2c_master.o          2 048        4      312       40
+    i2c_slave.o           1 092               320       48
+    main.o                  164
+    nvic.o                  224      184                16
+    pwm.o                   564                         48
+    sm5822.o                636                32
+    user_code.o           1 936                          4
+    ------------------------------------------------------
+    Total:               13 666      192   23 614      264
+
+dl7M_tln.a: [3]
+    XShttio.o                 8        8        8
+    abort.o                   6
+    errno.o                  12                 4
+    exit.o                    4
+    low_level_init.o          4
+    putchar.o                40
+    xassert.o                76
+    xreportassert.o         160
+    xtls.o                    2
+    ------------------------------------------------------
+    Total:                  312        8       12
+
+m7M_tl.a: [4]
+    DblAdd.o                232
+    DblCmpLe.o               46
+    DblDiv.o                582
+    DblMul.o                418
+    DblSub.o                384
+    DblToFlt.o              144
+    DblToI32.o               76
+    FltMul.o                216
+    FltToS32.o               68
+    I32ToDbl.o               44
+    floor.o                  94
+    log.o                     6
+    xdnorm.o                 66
+    xlog.o                  724
+    ------------------------------------------------------
+    Total:                3 100
+
+rt7M_tl.a: [5]
+    cexit.o                  10
+    cmain.o                  22
+    copy_init3.o             46
+    cstartup_M.o             12
+    data_init3.o             40
+    zero_init3.o             34
+    ------------------------------------------------------
+    Total:                  164
+
+shb_l.a: [6]
+    dwrite.o                 30
+    exit.o                   20
+    iarttio.o               108
+    iarwrite.o               34
+    iarwstd.o                32
+    write.o                  16
+    ------------------------------------------------------
+    Total:                  240
+
+    Gaps                     14
+    Linker created                    80    2 048
+----------------------------------------------------------
+    Grand Total:         17 496      280   25 674      264
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x0000233d          Code  Gb  cmain.o [5]
+ADC_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+AEC_DISABLE             0x000049e3    0x18  Code  Gb  cam.o [2]
+AEC_ENABLE              0x000049cb    0x18  Code  Gb  cam.o [2]
+AGC_DISABLE             0x00004983    0x18  Code  Gb  cam.o [2]
+AGC_ENABLE              0x0000496b    0x18  Code  Gb  cam.o [2]
+AWB_DISABLE             0x000049b3    0x18  Code  Gb  cam.o [2]
+AWB_ENABLE              0x0000499b    0x18  Code  Gb  cam.o [2]
+BOD_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+BOOTLOADER_CNTRL        0x1000552c   0x434  Data  Gb  bootloader.o [2]
+BW_thresh               0x10000004     0x1  Data  Gb  cam.o [2]
+Bildbearbeitung         0x00006125    0x14  Code  Gb  bildverarbeitung.o [2]
+BusFault_Handler        0x0000090b          Code  Wk  cstartup_M.o [2]
+CAM_CNTRL               0x10000014  0x4e38  Data  Gb  cam.o [2]
+CAM_OKAY                0x1000000a     0x1  Data  Gb  fsm.o [2]
+CAM_REG                 0x10005c48     0x1  Data  Gb  cam.o [2]
+CAN_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+CELL_STATUS             0x10005c4d     0x1  Data  Gb  fsm.o [2]
+COMMAND_CNTRL           0x10005c20     0xc  Data  Gb  i2c_slave.o [2]
+CSTACK$$Base            0x10005c50           --   Gb  - Linker created -
+CSTACK$$Limit           0x10006450           --   Gb  - Linker created -
+DebugMon_Handler        0x0000090b          Code  Wk  cstartup_M.o [2]
+EINT0_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+EINT1_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+EINT2_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+EINT3_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+Ethernet_IRQHandler     0x0000090b          Code  Wk  cstartup_M.o [2]
+Flash                   0x000012ad    0x3c  Code  Gb  flash.o [2]
+GPDMA_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+HardFault_Handler       0x0000090b          Code  Wk  cstartup_M.o [2]
+I2C0_CNTRL              0x10005a94   0x134  Data  Gb  i2c_slave.o [2]
+I2C0_IRQHandler         0x00000ed1    0x10  Code  Gb  i2c_slave.o [2]
+I2C1_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+I2C2_CNTRL              0x10005960   0x134  Data  Gb  i2c_master.o [2]
+I2C2_IRQHandler         0x00004ea1    0x12  Code  Gb  i2c_master.o [2]
+I2C2_TIMEOUT            0x10000000     0x4  Data  Gb  i2c_master.o [2]
+I2S_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+IAP_CNTRL               0x10005bc8    0x2c  Data  Gb  flash.o [2]
+Koordinaten             0x10005c14     0xc  Data  Gb  bildverarbeitung.o [2]
+LED1                    0x0000030d    0x58  Code  Gb  default.o [2]
+LED1_COUNT              0x10005c4b     0x1  Data  Gb  default.o [2]
+LED1_WAIT               0x10005c49     0x1  Data  Gb  default.o [2]
+LED2                    0x00000365    0x58  Code  Gb  default.o [2]
+LED2_BLINK              0x000003bd    0x34  Code  Gb  default.o [2]
+LED2_COUNT              0x10005c4c     0x1  Data  Gb  default.o [2]
+LED2_WAIT               0x10005c4a     0x1  Data  Gb  default.o [2]
+MemManage_Handler       0x0000090b          Code  Wk  cstartup_M.o [2]
+MotorControlPWM_IRQHandler
+                        0x0000090b          Code  Wk  cstartup_M.o [2]
+NMI_Handler             0x0000090b          Code  Wk  cstartup_M.o [2]
+NVIC_ClrPend            0x00000635    0x36  Code  Gb  nvic.o [2]
+NVIC_IntDisable         0x000005ff    0x36  Code  Gb  nvic.o [2]
+NVIC_IntEnable          0x000005c9    0x36  Code  Gb  nvic.o [2]
+NVIC_IntPri             0x0000066b    0x26  Code  Gb  nvic.o [2]
+PIC_TOOL_CNTRL          0x10004e4c   0x6e0  Data  Gb  bildverarbeitung.o [2]
+PLL0_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+PLL1_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+PRESS_OKAY              0x10000009     0x1  Data  Gb  fsm.o [2]
+PWM1MR0                 0x40018018     0x4  Data  Gb  pwm.o [2]
+PWM1MR4                 0x40018040     0x4  Data  Gb  pwm.o [2]
+PWM1MR5                 0x40018044     0x4  Data  Gb  pwm.o [2]
+PWM1MR6                 0x40018048     0x4  Data  Gb  pwm.o [2]
+PWM1_DISABLE            0x00001e95    0x1a  Code  Gb  pwm.o [2]
+PWM1_ENABLE             0x00001e41    0x1c  Code  Gb  pwm.o [2]
+PWM1_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+PWM2_DISABLE            0x00001eaf    0x1a  Code  Gb  pwm.o [2]
+PWM2_ENABLE             0x00001e5d    0x1c  Code  Gb  pwm.o [2]
+PWM3_DISABLE            0x00001ec9    0x1a  Code  Gb  pwm.o [2]
+PWM3_ENABLE             0x00001e79    0x1c  Code  Gb  pwm.o [2]
+PWM_HELLIGKEIT          0x00001e0f    0x32  Code  Gb  pwm.o [2]
+PendSV_Handler          0x0000090b          Code  Wk  cstartup_M.o [2]
+Prepare_Flash           0x00000979   0x16e  Code  Gb  bootloader.o [2]
+QE_IRQHandler           0x0000090b          Code  Wk  cstartup_M.o [2]
+RIT_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+RTC_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+Region$$Table$$Base     0x000022f0           --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000233c           --   Gb  - Linker created -
+SM5822_CNTRL            0x10005bf4    0x20  Data  Gb  sm5822.o [2]
+SPI_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+SSP0_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+SSP1_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+SVC_Handler             0x0000090b          Code  Wk  cstartup_M.o [2]
+SYSTEM_FLAGS            0x10005c34     0x4  Data  Gb  default.o [2]
+SysTick_Handler         0x0000090b          Code  Wk  cstartup_M.o [2]
+T0MR0                   0x40004018     0x4  Data  Gb  default.o [2]
+T0PR                    0x4000400c     0x4  Data  Gb  default.o [2]
+T1MR0                   0x40008018     0x4  Data  Gb  default.o [2]
+T1PR                    0x4000800c     0x4  Data  Gb  default.o [2]
+TEMP_OKAY               0x10000008     0x1  Data  Gb  fsm.o [2]
+TMR0_IRQHandler         0x0000049d    0x1e  Code  Gb  default.o [2]
+TMR1_IRQHandler         0x000004bb    0x8c  Code  Gb  default.o [2]
+TMR2_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+TMR3_IRQHandler         0x0000090b          Code  Wk  cstartup_M.o [2]
+UART0_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+UART1_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+UART2_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+UART3_IRQHandler        0x0000090b          Code  Wk  cstartup_M.o [2]
+USB_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+UsageFault_Handler      0x0000090b          Code  Wk  cstartup_M.o [2]
+WDT_IRQHandler          0x0000090b          Code  Wk  cstartup_M.o [2]
+_A_CCLKCFG              0x400fc104     0x4  Data  Gb  default.o [2]
+_A_CLKOUTCFG            0x400fc1c8     0x4  Data  Gb  cam.o [2]
+_A_CLKSRCSEL            0x400fc10c     0x4  Data  Gb  default.o [2]
+_A_CLRENA0              0xe000e180     0x4  Data  Gb  nvic.o [2]
+_A_CLRPEND0             0xe000e280     0x4  Data  Gb  nvic.o [2]
+_A_FIO0DIR              0x2009c000     0x4  Data  Gb  i2c_slave.o [2]
+_A_FIO0PIN              0x2009c014     0x4  Data  Gb  i2c_slave.o [2]
+_A_FIO1DIR              0x2009c020     0x4  Data  Gb  cam.o [2]
+_A_FIO1PIN              0x2009c034     0x4  Data  Gb  cam.o [2]
+_A_FIO2DIR              0x2009c040     0x4  Data  Gb  pwm.o [2]
+_A_FIO2PIN              0x2009c054     0x4  Data  Gb  default.o [2]
+_A_I2C0ADR              0x4001c00c     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C0ADR1             0x4001c020     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C0CONCLR           0x4001c018     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C0CONSET           0x4001c000     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C0DAT              0x4001c008     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C0SCLH             0x4001c010     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C0SCLL             0x4001c014     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C0STAT             0x4001c004     0x4  Data  Gb  i2c_slave.o [2]
+_A_I2C2CONCLR           0x400a0018     0x4  Data  Gb  i2c_master.o [2]
+_A_I2C2CONSET           0x400a0000     0x4  Data  Gb  i2c_master.o [2]
+_A_I2C2DAT              0x400a0008     0x4  Data  Gb  i2c_master.o [2]
+_A_I2C2SCLH             0x400a0010     0x4  Data  Gb  i2c_master.o [2]
+_A_I2C2SCLL             0x400a0014     0x4  Data  Gb  i2c_master.o [2]
+_A_I2C2STAT             0x400a0004     0x4  Data  Gb  i2c_master.o [2]
+_A_IP0                  0xe000e400     0x4  Data  Gb  nvic.o [2]
+_A_PCLKSEL0             0x400fc1a8     0x4  Data  Gb  pwm.o [2]
+_A_PCLKSEL1             0x400fc1ac     0x4  Data  Gb  i2c_master.o [2]
+_A_PCONP                0x400fc0c4     0x4  Data  Gb  default.o [2]
+_A_PINMODE0             0x4002c040     0x4  Data  Gb  i2c_master.o [2]
+_A_PINMODE1             0x4002c044     0x4  Data  Gb  i2c_slave.o [2]
+_A_PINMODE2             0x4002c048     0x4  Data  Gb  cam.o [2]
+_A_PINMODE3             0x4002c04c     0x4  Data  Gb  cam.o [2]
+_A_PINMODE4             0x4002c050     0x4  Data  Gb  pwm.o [2]
+_A_PINMODE_OD0          0x4002c068     0x4  Data  Gb  i2c_master.o [2]
+_A_PINSEL0              0x4002c000     0x4  Data  Gb  i2c_master.o [2]
+_A_PINSEL1              0x4002c004     0x4  Data  Gb  i2c_slave.o [2]
+_A_PINSEL2              0x4002c008     0x4  Data  Gb  cam.o [2]
+_A_PINSEL3              0x4002c00c     0x4  Data  Gb  cam.o [2]
+_A_PINSEL4              0x4002c010     0x4  Data  Gb  pwm.o [2]
+_A_PLL0CFG              0x400fc084     0x4  Data  Gb  default.o [2]
+_A_PLL0CON              0x400fc080     0x4  Data  Gb  default.o [2]
+_A_PLL0FEED             0x400fc08c     0x4  Data  Gb  default.o [2]
+_A_PLL0STAT             0x400fc088     0x4  Data  Gb  default.o [2]
+_A_PWM1LER              0x40018050     0x4  Data  Gb  pwm.o [2]
+_A_PWM1MCR              0x40018014     0x4  Data  Gb  pwm.o [2]
+_A_PWM1PCR              0x4001804c     0x4  Data  Gb  pwm.o [2]
+_A_PWM1TCR              0x40018004     0x4  Data  Gb  pwm.o [2]
+_A_SCS                  0x400fc1a0     0x4  Data  Gb  default.o [2]
+_A_SETENA0              0xe000e100     0x4  Data  Gb  nvic.o [2]
+_A_T0CTCR               0x40004070     0x4  Data  Gb  default.o [2]
+_A_T0IR                 0x40004000     0x4  Data  Gb  default.o [2]
+_A_T0MCR                0x40004014     0x4  Data  Gb  default.o [2]
+_A_T0TCR                0x40004004     0x4  Data  Gb  user_code.o [2]
+_A_T1CTCR               0x40008070     0x4  Data  Gb  default.o [2]
+_A_T1IR                 0x40008000     0x4  Data  Gb  default.o [2]
+_A_T1MCR                0x40008014     0x4  Data  Gb  default.o [2]
+_A_T1TCR                0x40008004     0x4  Data  Gb  default.o [2]
+__aeabi_assert          0x000006ab    0x4a  Code  Gb  xassert.o [3]
+__aeabi_cdcmple         0x0000162d          Code  Gb  DblCmpLe.o [4]
+__aeabi_d2f             0x00002091          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x00002205          Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x00001801          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x000018e9          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x0000165d          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x00001b31          Code  Gb  DblSub.o [4]
+__aeabi_errno_addr      0x00001621     0x6  Code  Gb  errno.o [3]
+__aeabi_f2iz            0x00002251          Code  Gb  FltToS32.o [4]
+__aeabi_fmul            0x00001f15          Code  Gb  FltMul.o [4]
+__aeabi_i2d             0x00001cb1          Code  Gb  I32ToDbl.o [4]
+__cmain                 0x0000233d          Code  Gb  cmain.o [5]
+__dwrite                0x00000881    0x1e  Code  Gb  dwrite.o [6]
+__exit                  0x000007f1    0x14  Code  Gb  exit.o [6]
+__iar_Dnorm             0x000015dd    0x42  Code  Gb  xdnorm.o [4]
+__iar_EmptyStepPoint    0x000006a9     0x2  Code  Gb  xassert.o [3]
+__iar_Errno             0x10005c44     0x4  Data  Gb  errno.o [3]
+__iar_Log               0x00001309   0x248  Code  Gb  xlog.o [4]
+__iar_ReportAssert      0x0000070b    0x50  Code  Gb  xreportassert.o [3]
+__iar_close_ttio        0x00000815    0x2e  Code  Gb  iarttio.o [6]
+__iar_copy_init3        0x000007c3    0x2e  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x00002231          Code  Gb  DblToI32.o [4]
+__iar_dadd              0x00001815          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x000022c9    0x28  Code  Gb  data_init3.o [5]
+__iar_dlib_perthread_access
+                        0x00001cdd     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x00001b45          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x00001b57          Code  Gb  DblSub.o [4]
+__iar_floor             0x000021a5          Code  Gb  floor.o [4]
+__iar_floorl            0x000021a5          Code  Gb  floor.o [4]
+__iar_get_ttio          0x00000845    0x38  Code  Gb  iarttio.o [6]
+__iar_lookup_ttioh      0x000008c1     0x8  Code  Gb  XShttio.o [3]
+__iar_program_start     0x00002367          Code  Gb  cstartup_M.o [5]
+__iar_sh_stdout         0x000008c9    0x20  Code  Gb  iarwstd.o [6]
+__iar_sh_write          0x000008e9    0x22  Code  Gb  iarwrite.o [6]
+__iar_ttio_handles      0x1000000c     0x8  Data  Lc  XShttio.o [3]
+__iar_ui2d              0x00001cc5          Code  Gb  I32ToDbl.o [4]
+__iar_zero_init3        0x0000089f    0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00002353     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000          Data  Gb  cstartup_M.o [2]
+__vector_table_0x1c     0x0000001c          Data  Gb  cstartup_M.o [2]
+__write                 0x00000805    0x10  Code  Gb  write.o [6]
+_call_main              0x00002349          Code  Gb  cmain.o [5]
+_exit                   0x0000235d          Code  Gb  cexit.o [5]
+_main                   0x0000234f          Code  Gb  cmain.o [5]
+abort                   0x00000795     0x6  Code  Gb  abort.o [3]
+boot_core               0x0000090d    0x20  Code  Gb  bootloader.o [2]
+bootloader_major        0x10005c2c     0x4  Data  Gb  bootloader.o [2]
+bootloader_minor        0x10005c30     0x4  Data  Gb  bootloader.o [2]
+calculate_array_pos     0x00000d01    0x2a  Code  Gb  bootloader.o [2]
+calculate_rom_address   0x00000cdf    0x22  Code  Gb  bootloader.o [2]
+cam_config              0x0000435b    0x98  Code  Gb  cam.o [2]
+cam_init                0x00004057   0x304  Code  Gb  cam.o [2]
+cam_read                0x000043f3    0x68  Code  Gb  cam.o [2]
+clear_command           0x00001171     0xe  Code  Gb  i2c_slave.o [2]
+clock_init              0x00000101    0xec  Code  Gb  default.o [2]
+clock_output_init       0x00004001    0x56  Code  Gb  cam.o [2]
+exit                    0x00002357     0x4  Code  Gb  exit.o [3]
+firmware_major          0x10005c3c     0x4  Data  Gb  fsm.o [2]
+firmware_minor          0x10005c40     0x4  Data  Gb  fsm.o [2]
+floor                   0x000021a5          Code  Gb  floor.o [4]
+floorl                  0x000021a5          Code  Gb  floor.o [4]
+fsm                     0x00003001    0xe8  Code  Gb  fsm.o [2]
+get_address             0x00000e37    0x9a  Code  Gb  i2c_slave.o [2]
+get_center              0x00006033    0x8e  Code  Gb  bildverarbeitung.o [2]
+get_data                0x00005cfb   0x220  Code  Gb  sm5822.o [2]
+get_position            0x00005f87    0xac  Code  Gb  bildverarbeitung.o [2]
+i2c_get_data            0x00004e29    0x78  Code  Gb  i2c_master.o [2]
+i2c_get_status          0x00004e1f     0xa  Code  Gb  i2c_master.o [2]
+i2c_init                0x00004d49    0xd6  Code  Gb  i2c_master.o [2]
+i2c_load                0x00005503     0x8  Code  Gb  i2c_master.o [2]
+i2c_receive             0x0000533f    0xc0  Code  Gb  i2c_master.o [2]
+i2c_return              0x0000550b     0x8  Code  Gb  i2c_master.o [2]
+i2c_send                0x00005257    0xe8  Code  Gb  i2c_master.o [2]
+i2c_send_receive        0x000053ff   0x104  Code  Gb  i2c_master.o [2]
+i2c_slave_init          0x00000d7d    0xba  Code  Gb  i2c_slave.o [2]
+i2c_slave_statehandler  0x00000ee1   0x290  Code  Gb  i2c_slave.o [2]
+i2c_statehandler        0x00004eb3   0x3a4  Code  Gb  i2c_master.o [2]
+iap_check_blank         0x00001271    0x3c  Code  Gb  flash.o [2]
+iap_entry               0x10005c38     0x4  Data  Gb  flash.o [2]
+iap_erase_sector        0x00001237    0x3a  Code  Gb  flash.o [2]
+iap_prepare_sector      0x000011c1    0x3c  Code  Gb  flash.o [2]
+iap_write_flash         0x000011fd    0x3a  Code  Gb  flash.o [2]
+io_init                 0x000002b7    0x56  Code  Gb  default.o [2]
+led_timer1_init         0x000001ed    0xca  Code  Gb  default.o [2]
+log                     0x00002373     0x6  Code  Gb  log.o [4]
+main                    0x00001fed    0xa4  Code  Gb  main.o [2]
+mark_center             0x000060c1    0x58  Code  Gb  bildverarbeitung.o [2]
+out                     0x000006f5    0x16  Code  Lc  xreportassert.o [3]
+picture_position        0x00005f7f     0x8  Code  Gb  bildverarbeitung.o [2]
+putchar                 0x0000079b    0x28  Code  Gb  putchar.o [3]
+pwm_init                0x00001ce1   0x12e  Code  Gb  pwm.o [2]
+read_b_gain             0x00004b2b     0xa  Code  Gb  cam.o [2]
+read_exposure           0x000049fb    0x42  Code  Gb  cam.o [2]
+read_g_gain             0x00004b21     0xa  Code  Gb  cam.o [2]
+read_gain               0x00004ab9    0x5e  Code  Gb  cam.o [2]
+read_r_gain             0x00004b17     0xa  Code  Gb  cam.o [2]
+receive_firmware        0x00000ae7   0x11e  Code  Gb  bootloader.o [2]
+save_edges              0x0000445d   0x32c  Code  Gb  cam.o [2]
+save_grey_pic           0x00004789   0x1e2  Code  Gb  cam.o [2]
+sector                  0x0000092d    0x4c  Code  Gb  bootloader.o [2]
+send_boot_status        0x00000d2b    0x12  Code  Gb  bootloader.o [2]
+send_bootloader_version
+                        0x00000d3d    0x1a  Code  Gb  bootloader.o [2]
+sm5822_init             0x00005cd9    0x22  Code  Gb  sm5822.o [2]
+test_pic                0x00004bf5   0x12e  Code  Gb  cam.o [2]
+threshold               0x00005f55    0x2a  Code  Gb  bildverarbeitung.o [2]
+timer_init              0x000003f1    0xac  Code  Gb  default.o [2]
+update_firmware         0x00000c05    0xda  Code  Gb  bootloader.o [2]
+user_program            0x00005549   0x790  Code  Gb  user_code.o [2]
+write_b_gain            0x00004b51     0xe  Code  Gb  cam.o [2]
+write_exposure          0x00004a3d    0x3e  Code  Gb  cam.o [2]
+write_g_gain            0x00004b43     0xe  Code  Gb  cam.o [2]
+write_gain              0x00004b5f    0x96  Code  Gb  cam.o [2]
+write_r_gain            0x00004b35     0xe  Code  Gb  cam.o [2]
+
+
+[1] = command line
+[2] = t:\PROJEKTE\AFC\Automatisierung\Matratze\Base Plate\BasePlate V0.x Control\BasePlate Control BL V0.5 FW V0.1\BP Control\Debug\Obj
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  17 496 bytes of readonly  code memory
+     280 bytes of readonly  data memory
+  25 674 bytes of readwrite data memory (+ 264 absolute)
+
+Errors: none
+Warnings: none
